@@ -20,10 +20,16 @@ public class BasePage {
     @FindBy(id = "submit-form")
     public WebElement loginButton;
 
+    /*
+
+
     public void login(){
+
         Driver.getDriver().get(ConfigurationReader.getProperty("meetsky.url"));
-        usernameButton.sendKeys(ConfigurationReader.getProperty("meetsky.username"));
+        usernameButton.sendKeys(ConfigurationReader.getProperty("meetsky.username.deniz"));
         passwordButton.sendKeys(ConfigurationReader.getProperty("meetsky.password"));
         loginButton.click();
     }
-}
+    */
+    }
+
