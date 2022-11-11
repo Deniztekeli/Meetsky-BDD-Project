@@ -104,14 +104,22 @@ public class ContactGroup_StepDefinitions {
     @Then("user should able to see all group names")
     public void userShouldAbleToSeeAllGroupNames() {
 
-        for (WebElement each : contactGroupPage.allGroupNames) {
-            System.out.println("each.getText() = " + each.getText());
-        }
-        for (WebElement each : contactGroupPage.listOfGroupsInContactInfo) {
-            System.out.println("each.getText() = " + each.getText());
+        for (WebElement eachGroupNames : contactGroupPage.allGroupNames) {
+
+            for (WebElement eachGroup : contactGroupPage.listOfGroupsInContactInfo) {
+
+                if(eachGroupNames.equals(eachGroup)){
+
+                }
+
+
+
+            }
+
         }
 
-       //turn back here
+
+
 
        Assert.assertTrue(contactGroupPage.allGroupNames.contains( contactGroupPage.listOfGroupsInContactInfo));
 
