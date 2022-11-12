@@ -1,5 +1,5 @@
 Feature: Login features
 
-Scenario: 
+  Background:
     Given the user is on the login page
 
