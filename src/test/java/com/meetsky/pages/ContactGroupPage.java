@@ -29,7 +29,7 @@ public class ContactGroupPage {
     @FindBy(xpath = "(//*[@class='app-navigation-entry__title'])")
     public List<WebElement> listOfGroups;
 
-    @FindBy(xpath = "//p[@class='action-text__longtext']")
+    @FindBy(xpath = "//*[.='This group already exists']")
     public WebElement alreadyExistGroupMessage;
 
     @FindBy(id= "notgrouped")
