@@ -5,6 +5,9 @@ import org.openqa.selenium.support.FindBy;
 
 public class FileFunctionality_Page {
 
+    @FindBy(xpath = "//*[@id=\"appmenu\"]/li[2]/a")
+    public WebElement filesMenu;
+
     //1st scenario
     @FindBy(xpath = "//*[@id=\"fileList\"]/tr[1]/td[2]/a/span[3]/a[2]/span[1]")
     public WebElement treeDots;

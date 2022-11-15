@@ -19,8 +19,8 @@ public class FileFunctionality_StepDefinitions {
 //precondition
     @Given("the user enter the files section")
     public void the_user_enter_the_files_section() {
-        BrowserUtils.sleep(30);
-        basePage.filesPageLink.click();
+        BrowserUtils.sleep(20);
+        fileFunctionality_page.filesMenu.click();
     }
 
 
