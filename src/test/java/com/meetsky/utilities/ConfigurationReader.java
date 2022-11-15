@@ -9,13 +9,13 @@ public class ConfigurationReader {
 
     static {
         try {
-            //2-We need to open the file in java memory: FileInputStream
+            //2-We need to open the fileFunctionality.feature in java memory: FileInputStream
             FileInputStream file = new FileInputStream("configuration.properties");
 
             //3-Load the properties object using FileInputStream object
             properties.load(file);
 
-            //close the file
+            //close the fileFunctionality.feature
             file.close();
 
         } catch (IOException e) {

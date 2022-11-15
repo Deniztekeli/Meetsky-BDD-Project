@@ -34,7 +34,7 @@ public class Driver {
 
 
             /*
-                Depending on the browserType that will be return from configuration.properties file
+                Depending on the browserType that will be return from configuration.properties fileFunctionality.feature
                 switch statement will determine the case, and open the matching browser
             */
             switch (browserType){
