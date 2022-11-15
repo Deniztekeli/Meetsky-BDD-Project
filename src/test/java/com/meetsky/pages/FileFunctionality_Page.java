@@ -46,16 +46,19 @@ public class FileFunctionality_Page {
 
 
     //4th Scenario
-    @FindBy(xpath = "//*[@id=\"menu-hnjes\"]/li[3]/button/span[2]")
+    @FindBy(xpath = "//*[@id=\"menu-hmkwc\"]/li[3]/button")
     public WebElement deleteCommentOption;
 
-    @FindBy(xpath = "//button[@class='toast-undo-button']")
+    @FindBy(xpath = "//*[@id=\"body-user\"]/div[1]")
     public WebElement commentDeletedMessage;
 
-    @FindBy(xpath = "(//button[@aria-label='Actions'])[2]")
+    @FindBy(xpath = "//*[@id=\"tab-comments\"]/div/div[2]/div[1]/div[2]/div/div/button/span")
     public WebElement commentThreeDots;
 
-    @FindBy(id = "comments")
+    @FindBy(id = "//*[@id=\"comments\"]")
     public WebElement commentBtn;
+
+    @FindBy(id = "@FindBy(id = \"//*[@id=\"tab-comments\");\n")
+    public WebElement tabComments;
 
 }

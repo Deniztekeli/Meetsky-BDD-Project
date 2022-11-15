@@ -1,4 +1,4 @@
-@wip
+
 Feature: Add to Favorites/Rename/Comment on File Functionality
   Agile story: As a user, I should be able to add a file to favorites,
   rename any file and give some comments on any file.
@@ -21,7 +21,7 @@ Feature: Add to Favorites/Rename/Comment on File Functionality
     When user click icon next to tree dots
     And user select comment section
     Then user should be able to add comments
-
+  @wip
   Scenario: Deleting the comment made on file details menu
     When user click on three dots and select details option
     And user click three dots of any comment and select delete
