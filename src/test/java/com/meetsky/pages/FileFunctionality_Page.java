@@ -1,12 +1,18 @@
 package com.meetsky.pages;
 
+import com.meetsky.utilities.Driver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
 public class FileFunctionality_Page {
 
-    @FindBy(xpath = "//*[@id=\"appmenu\"]/li[2]/a")
-    public WebElement filesMenu;
+    public FileFunctionality_Page(){
+        PageFactory.initElements(Driver.getDriver(),this);
+    }
+
+    @FindBy(xpath = "//a[@aria-label='Files']")
+    public WebElement filesLink;
 
     //1st scenario
     @FindBy(xpath = "//*[@id=\"fileList\"]/tr[1]/td[2]/a/span[3]/a[2]/span[1]")
@@ -20,11 +26,11 @@ public class FileFunctionality_Page {
 
 
     //2nd Scenario
-    @FindBy(xpath = "//a[@data-action='Rename']")
-    public WebElement renameBtn;
+    @FindBy(xpath = "//span[.='Rename']")
+    public WebElement renameOption;
 
     @FindBy(xpath = "//*[@id=\"fileList\"]/tr[1]/td[2]/a")
-    public WebElement assertRename;
+    public WebElement fileName;
 
 
     //3rd Scenario
@@ -40,17 +46,16 @@ public class FileFunctionality_Page {
 
 
     //4th Scenario
-    @FindBy(xpath = "//*[@id=\"tab-comments\"]/div/div[2]/div[1]/div[2]/div/div/button/span")
-    public WebElement commentTreeDot;
+    @FindBy(xpath = "//*[@id=\"menu-hnjes\"]/li[3]/button/span[2]")
+    public WebElement deleteCommentOption;
 
-    @FindBy(xpath = "//*[@id=\"menu-xogsy\"]/li[3]/button/span[2]")
-    public WebElement removeComment;
+    @FindBy(xpath = "//button[@class='toast-undo-button']")
+    public WebElement commentDeletedMessage;
 
+    @FindBy(xpath = "(//button[@aria-label='Actions'])[2]")
+    public WebElement commentThreeDots;
 
-
-
-
-
-
+    @FindBy(id = "comments")
+    public WebElement commentBtn;
 
 }

@@ -4,12 +4,17 @@ import com.meetsky.pages.BasePage;
 import com.meetsky.pages.FileFunctionality_Page;
 import com.meetsky.pages.LoginPage;
 import com.meetsky.utilities.BrowserUtils;
+import com.meetsky.utilities.Driver;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class FileFunctionality_StepDefinitions {
 
@@ -19,8 +24,7 @@ public class FileFunctionality_StepDefinitions {
 //precondition
     @Given("the user enter the files section")
     public void the_user_enter_the_files_section() {
-        BrowserUtils.sleep(20);
-        fileFunctionality_page.filesMenu.click();
+        fileFunctionality_page.filesLink.click();
     }
 
 
@@ -45,26 +49,32 @@ public class FileFunctionality_StepDefinitions {
 
 
 //Second scenario
-    //user_click_three_dots_of_the_created_file --> add to first
+
     @When("user select rename and write new name and click enter")
     public void user_select_rename_and_write_new_name_and_click_enter() {
-        BrowserUtils.sleep(10);
-        fileFunctionality_page.treeDots.click();
-        fileFunctionality_page.addToFav.click();
-        fileFunctionality_page.renameBtn.click();
-        fileFunctionality_page.renameBtn.sendKeys("New Name"+ Keys.ENTER);
+        BrowserUtils.sleep(5);
+        fileFunctionality_page.renameOption.click();
 
     }
     @Then("user should see new name on the file")
     public void user_should_see_new_name_on_the_file() {
-        WebElement assertRename = fileFunctionality_page.assertRename;
-        Assert.assertTrue(assertRename.isDisplayed());
+        //BrowserUtils.waitForVisibility(filesPage.renameBox,10);
+        String expectedFileName = "changed";
+        Actions actions = new Actions(Driver.getDriver());
+        // actions.moveToElement(filesPage.renameBox).pause(3).perform();
+        actions.sendKeys(expectedFileName+Keys.ENTER).perform();
+        BrowserUtils.waitForVisibility(fileFunctionality_page.fileName,10);
+
+        String actualFileName=fileFunctionality_page.fileName.getText();
+
+        Assert.assertTrue(actualFileName.contains(expectedFileName) );
     }
 
 
 
 
-//Third Scenario
+
+    //Third Scenario
     @When("user click icon next to tree dots")
     public void user_click_icon_next_to_tree_dots() {
         fileFunctionality_page.shareIcon.click();
@@ -80,22 +90,20 @@ public class FileFunctionality_StepDefinitions {
 
 
 //Fourth Scenario
-    //user_click_icon_next_to_tree_dots
-
-    //user_select_comment_section
-    @When("user click on tree dots near the username")
-    public void user_click_on_tree_dots_near_the_username() {
-        fileFunctionality_page.shareIcon.click();
-        fileFunctionality_page.comments.click();
-        fileFunctionality_page.commentTreeDot.click();
+    @When("user click three dots of any comment and select delete")
+    public void user_click_three_dots_of_any_comment_and_select_delete() {
+        BrowserUtils.sleep(7);
+        fileFunctionality_page.commentBtn.click();
+        WebDriverWait wait = new WebDriverWait(Driver.getDriver(),10);
+        wait.until(ExpectedConditions.elementToBeClickable(fileFunctionality_page.commentThreeDots));
+        fileFunctionality_page.commentThreeDots.click();
+        fileFunctionality_page.deleteCommentOption.click();
     }
-    @Then("user should be able to delete comment")
-    public void user_should_be_able_to_delete_comment() {
-        fileFunctionality_page.removeComment.click();
+    @Then("user should see that comment is deleted")
+    public void user_should_see_that_comment_is_deleted() {
+        BrowserUtils.sleep(5);
+        Assert.assertTrue(fileFunctionality_page.commentDeletedMessage.isDisplayed());
     }
-
-
-
 
 
 }

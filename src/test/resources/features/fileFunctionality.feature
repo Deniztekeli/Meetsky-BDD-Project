@@ -23,7 +23,6 @@ Feature: Add to Favorites/Rename/Comment on File Functionality
     Then user should be able to add comments
 
   Scenario: Deleting the comment made on file details menu
-    When user click icon next to tree dots
-    And user select comment section
-    And user click on tree dots near the username
-    Then user should be able to delete comment
+    When user click on three dots and select details option
+    And user click three dots of any comment and select delete
+    Then user should see that comment is deleted
