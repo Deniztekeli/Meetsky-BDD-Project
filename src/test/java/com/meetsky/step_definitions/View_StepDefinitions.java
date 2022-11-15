@@ -60,11 +60,11 @@ public class View_StepDefinitions {
     public void userShouldSeeTheFoldersOrderedBySize() {
         ArrayList<String> list = new ArrayList<>();
         for (WebElement eachWebElement : viewPage.folderList) {
-            list.add(eachWebElement.getAttribute("data-size"));
+            list.add(eachWebElement.getAttribute("data-size").toUpperCase());
         }
         ArrayList<String> list2 = new ArrayList<>();
         for (WebElement eachWebElement : viewPage.folderList) {
-            list2.add(eachWebElement.getAttribute("data-size"));
+            list2.add(eachWebElement.getAttribute("data-size").toUpperCase());
         }
 
         Collections.sort(list);
@@ -106,7 +106,6 @@ public class View_StepDefinitions {
     @Then("user should be able to change the view of the folders as side by side and in a column")
     public void userShouldBeAbleToChangeTheViewOfTheFoldersAsSideBySideAndInAColumn() {
         Assert.assertTrue(viewPage.fileTableWithGrid.getAttribute("class").contains("grid"));
-
 
     }
 
