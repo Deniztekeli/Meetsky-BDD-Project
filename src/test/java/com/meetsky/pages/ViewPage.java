@@ -26,7 +26,8 @@ public class ViewPage {
     @FindBy(xpath = "//a[@aria-label='Files']")
     public WebElement filesLink;
 
-    @FindBy(xpath = "//span[.='Name']/following-sibling::span[@class='sort-indicator hidden icon-triangle-s']")
+    @FindBy(id= "headerName-container")
+         //   "//span[.='Name']/following-sibling::span[@class='sort-indicator hidden icon-triangle-s']")
     public WebElement orderByNameButton;
     // //span[@class='sort-indicator icon-triangle-s']
     // //span[.='Name']
@@ -34,21 +35,42 @@ public class ViewPage {
     @FindBy(xpath = "//tbody[@id='fileList']//tr")
     public List<WebElement> fileList;
 
-    @FindBy(xpath = "//span[.='Size']/following-sibling::span[@class='sort-indicator hidden icon-triangle-s']")
+    @FindBy(id = "headerSize")
     public WebElement orderBySizeButton;
+            // "//span[.='Size']/following-sibling::span[@class='sort-indicator hidden icon-triangle-s']")
     // //span[.='Size']
 
-    @FindBy(xpath = "//span[.='Modified']/following-sibling::span[@class='sort-indicator hidden icon-triangle-s']")
+    @FindBy(id = "headerDate")
     public WebElement orderByModifiedButton;
+    //xpath = "//span[.='Modified']/following-sibling::span[@class='sort-indicator hidden icon-triangle-s']")
     // //span[.='Modified']
 
+    @FindBy(xpath = "//tr[@data-type='dir']")
+    public  List<WebElement> folderList;
 
-    public void login(){
+    @FindBy(xpath = "//label[@for='select_all_files']")
+    public  WebElement selectAllFilesOption;
 
-        Driver.getDriver().get(ConfigurationReader.getProperty("meetsky.url"));
-        usernameButton.sendKeys(ConfigurationReader.getProperty("meetsky.username.deniz"));
-        passwordButton.sendKeys(ConfigurationReader.getProperty("meetsky.password"));
-        loginButton.click();
-    }
+    @FindBy(xpath = "(//a[@class='name sort columntitle']/span)[1]")
+    public WebElement totalSelectedFolderNumber;
+
+    @FindBy(xpath = "(//a[@class='size sort columntitle']/span)[1]")
+    public WebElement totalSelectedFolderSize;
+
+
+    @FindBy(id = "view-toggle")
+    public WebElement toggleViewButton;
+
+    @FindBy(xpath = "//table[@class='list-container has-controls view-grid']")
+    public WebElement fileTableWithGrid;
+
+    @FindBy(xpath = "//table[@class='list-container has-controls']")
+    public WebElement fileTableWithoutGrid;
+
+
+
+
+
+
 
 }
