@@ -10,8 +10,6 @@ import io.cucumber.java.en.When;
 public class ProfileSettings_StepDefinition {
 
    ProfileSettingsPage profileSettingsPage = new ProfileSettingsPage();
-    LoginPage loginPage = new LoginPage();
-    LoginPage basePage = new LoginPage();
 
     @Then("user should see Full name, Email, and Phone Number options")
     public void user_should_see_full_name_email_and_phone_number_options() throws InterruptedException {
