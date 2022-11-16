@@ -96,31 +96,12 @@ public class FileFunctionality_StepDefinitions {
 
 
 //Fourth Scenario
-   /* @When("user click three dots of any comment and select delete")
-    public void user_click_three_dots_of_any_comment_and_select_delete() {
-        BrowserUtils.sleep(7);
-        fileFunctionality_page.commentBtn.click();
-        WebDriverWait wait = new WebDriverWait(Driver.getDriver(),10);
-        wait.until(ExpectedConditions.elementToBeClickable(fileFunctionality_page.commentThreeDots));
-        fileFunctionality_page.commentThreeDots.click();
-        fileFunctionality_page.deleteCommentOption.click();
-
-
-    }*/
 
     @When("user click on three dots and select details option")
     public void userClickOnThreeDotsAndSelectDetailsOption() {
         fileFunctionality_page.dotThree.click();
         fileFunctionality_page.details.click();
 
-        /*BrowserUtils.sleep(7);
-        fileFunctionality_page.commentBtn.click();
-        WebDriverWait wait = new WebDriverWait(Driver.getDriver(),10);
-        wait.until(ExpectedConditions.elementToBeClickable(fileFunctionality_page.commentThreeDots));
-        fileFunctionality_page.commentThreeDots.click();
-        fileFunctionality_page.deleteCommentOption.click();
-
-         */
     }
 
     @And("user click on comment button")

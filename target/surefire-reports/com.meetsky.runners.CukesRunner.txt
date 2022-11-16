@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: com.meetsky.runners.CukesRunner
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.002 s <<< FAILURE! - in com.meetsky.runners.CukesRunner
-com.meetsky.runners.CukesRunner.initializationError  Time elapsed: 0.002 s  <<< ERROR!
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.001 s <<< FAILURE! - in com.meetsky.runners.CukesRunner
+com.meetsky.runners.CukesRunner.initializationError  Time elapsed: 0.001 s  <<< ERROR!
 io.cucumber.core.gherkin.FeatureParserException: 
 Failed to parse resource at: file:///Users/elifdemir/IdeaProjects/Meetsky-BDD-Project/src/test/resources/features/fileFunctionality.feature
 (6:3): expected: #TagLine, #RuleLine, #Comment, #Empty, got 'Background:'
