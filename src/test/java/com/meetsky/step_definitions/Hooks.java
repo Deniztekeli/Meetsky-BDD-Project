@@ -15,7 +15,7 @@ public class Hooks {
 
     }
 
-  /*
+
     @After
     public void teardownScenario(Scenario scenario) {
 
@@ -34,7 +34,7 @@ public class Hooks {
         //System.out.println("====Scenario ended/ Take screenshot if failed");
     }
 
-*/
+
 
 
 }

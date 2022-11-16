@@ -10,7 +10,7 @@ Scenario: Changing folder view order by Name
   And  user select name option to order the folders
   Then user should see the folders ordered by name
 
-@ETSKY-907 @wip
+@ETSKY-907
 Scenario: Changing folder view order by Size
   When user click files menu
   And  user select size option to order the folders

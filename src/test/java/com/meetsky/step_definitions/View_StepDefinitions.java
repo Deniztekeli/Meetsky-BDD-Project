@@ -28,6 +28,7 @@ public class View_StepDefinitions {
 
     @And("user select name option to order the folders")
     public void userSelectNameOptionToOrderTheFolders() {
+        BrowserUtils.sleep(10);
         BrowserUtils.waitForVisibility(viewPage.orderByNameButton,15);
         viewPage.orderByNameButton.click();
     }
@@ -51,6 +52,7 @@ public class View_StepDefinitions {
 
     @And("user select size option to order the folders")
     public void userSelectSizeOptionToOrderTheFolders() {
+        BrowserUtils.sleep(10);
         BrowserUtils.waitForVisibility(viewPage.orderBySizeButton,10);
         viewPage.orderBySizeButton.click();
     }
@@ -85,6 +87,7 @@ public class View_StepDefinitions {
 
     @And("user select name option to order the modified")
     public void userSelectNameOptionToOrderTheModified() {
+        BrowserUtils.sleep(10);
         BrowserUtils.waitForVisibility(viewPage.orderByModifiedButton,10);
         viewPage.orderByModifiedButton.click();
     }
