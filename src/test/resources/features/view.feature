@@ -4,7 +4,7 @@ Feature: Folder view features
     Given the user is on the login page
 
 
-@ETSKY-906
+  @smoke  @ETSKY-906
 Scenario: Changing folder view order by Name
   When user click files menu
   And  user select name option to order the folders
