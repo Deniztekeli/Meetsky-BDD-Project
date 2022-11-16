@@ -27,6 +27,7 @@ public class ProfileSettings_StepDefinition {
         Thread.sleep(2000);
     }
 
+
     @When("the user deletes the existing contact name")
     public void the_user_deletes_the_existing_contact_name() throws InterruptedException {
         profileSettingsPage.fullNameTab.clear();
