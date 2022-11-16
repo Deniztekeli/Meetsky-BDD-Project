@@ -11,6 +11,7 @@ import org.junit.Assert;
 import org.openqa.selenium.WebElement;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
@@ -18,7 +19,6 @@ public class View_StepDefinitions {
 
     ViewPage viewPage = new ViewPage();
     LoginPage basePage = new LoginPage();
-
 
 
     @When("user click files menu")
@@ -43,7 +43,6 @@ public class View_StepDefinitions {
         for (WebElement eachWebElement : viewPage.folderList) {
             list2.add(eachWebElement.getAttribute("data-file").toUpperCase());
         }
-
          Collections.sort(list);
         System.out.println(list);
         System.out.println(list2);
@@ -58,19 +57,30 @@ public class View_StepDefinitions {
 
     @Then("user should see the folders ordered by size")
     public void userShouldSeeTheFoldersOrderedBySize() {
+        int n=0;
         ArrayList<String> list = new ArrayList<>();
+        int[] arr = new int[6];
         for (WebElement eachWebElement : viewPage.folderList) {
-            list.add(eachWebElement.getAttribute("data-size").toUpperCase());
+            list.add(eachWebElement.getAttribute("data-size"));
+            int integer = Integer.parseInt(eachWebElement.getAttribute("data-size"));
+            arr[n++] = integer;
         }
+        int n2=0;
         ArrayList<String> list2 = new ArrayList<>();
+        int[] arr2 = new int[6];
         for (WebElement eachWebElement : viewPage.folderList) {
-            list2.add(eachWebElement.getAttribute("data-size").toUpperCase());
+            list2.add(eachWebElement.getAttribute("data-size"));
+            int integer = Integer.parseInt(eachWebElement.getAttribute("data-size"));
+            arr2[n2++] = integer;
         }
 
-        Collections.sort(list);
-        System.out.println(list);
-        System.out.println(list2);
-        Assert.assertEquals(list,list2);
+        Arrays.sort(arr);
+        System.out.println(Arrays.toString(arr));
+        //System.out.println(list);
+        //Collections.sort(list);
+       // System.out.println(list);
+        System.out.println(Arrays.toString(arr2));
+        Assert.assertEquals(Arrays.toString(arr),Arrays.toString(arr2));
     }
 
     @And("user select name option to order the modified")
