@@ -1,6 +1,11 @@
-C:\Users\deniz\IdeaProjects\Meetsky-BDD-Project\src\test\java\com\meetsky\runners\FailedTestRunner.java
-C:\Users\deniz\IdeaProjects\Meetsky-BDD-Project\src\test\java\com\meetsky\runners\CukesRunner.java
-C:\Users\deniz\IdeaProjects\Meetsky-BDD-Project\src\test\java\com\meetsky\utilities\ConfigurationReader.java
-C:\Users\deniz\IdeaProjects\Meetsky-BDD-Project\src\test\java\com\meetsky\utilities\Driver.java
-C:\Users\deniz\IdeaProjects\Meetsky-BDD-Project\src\test\java\com\meetsky\pages\BasePage.java
-C:\Users\deniz\IdeaProjects\Meetsky-BDD-Project\src\test\java\com\meetsky\utilities\BrowserUtils.java
+/Users/elifdemir/IdeaProjects/Meetsky-BDD-Project/src/test/java/com/meetsky/utilities/ConfigurationReader.java
+/Users/elifdemir/IdeaProjects/Meetsky-BDD-Project/src/test/java/com/meetsky/step_definitions/Hooks.java
+/Users/elifdemir/IdeaProjects/Meetsky-BDD-Project/src/test/java/com/meetsky/step_definitions/Login_StepDefinition.java
+/Users/elifdemir/IdeaProjects/Meetsky-BDD-Project/src/test/java/com/meetsky/pages/FileFunctionality_Page.java
+/Users/elifdemir/IdeaProjects/Meetsky-BDD-Project/src/test/java/com/meetsky/utilities/BrowserUtils.java
+/Users/elifdemir/IdeaProjects/Meetsky-BDD-Project/src/test/java/com/meetsky/utilities/Driver.java
+/Users/elifdemir/IdeaProjects/Meetsky-BDD-Project/src/test/java/com/meetsky/runners/CukesRunner.java
+/Users/elifdemir/IdeaProjects/Meetsky-BDD-Project/src/test/java/com/meetsky/pages/LoginPage.java
+/Users/elifdemir/IdeaProjects/Meetsky-BDD-Project/src/test/java/com/meetsky/step_definitions/FileFunctionality_StepDefinitions.java
+/Users/elifdemir/IdeaProjects/Meetsky-BDD-Project/src/test/java/com/meetsky/pages/BasePage.java
+/Users/elifdemir/IdeaProjects/Meetsky-BDD-Project/src/test/java/com/meetsky/runners/FailedTestRunner.java

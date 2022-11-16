@@ -1,4 +1,19 @@
 -------------------------------------------------------------------------------
 Test set: com.meetsky.runners.CukesRunner
 -------------------------------------------------------------------------------
-Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in com.meetsky.runners.CukesRunner
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.002 s <<< FAILURE! - in com.meetsky.runners.CukesRunner
+com.meetsky.runners.CukesRunner.initializationError  Time elapsed: 0.002 s  <<< ERROR!
+io.cucumber.core.gherkin.FeatureParserException: 
+Failed to parse resource at: file:///Users/elifdemir/IdeaProjects/Meetsky-BDD-Project/src/test/resources/features/fileFunctionality.feature
+(6:3): expected: #TagLine, #RuleLine, #Comment, #Empty, got 'Background:'
+(7:5): expected: #TagLine, #RuleLine, #Comment, #Empty, got 'Given the user is on the login page'
+(8:5): expected: #TagLine, #RuleLine, #Comment, #Empty, got 'And the user enter the files section'
+(11:3): expected: #TagLine, #RuleLine, #Comment, #Empty, got 'Scenario: Adding any file to favorites by clicking tree dots menu'
+(12:5): expected: #TagLine, #RuleLine, #Comment, #Empty, got 'When user click three dots of the created file'
+(13:5): expected: #TagLine, #RuleLine, #Comment, #Empty, got 'And user select add to favorites link'
+(14:5): expected: #TagLine, #RuleLine, #Comment, #Empty, got 'Then user should see selected file has a star icon'
+(17:3): expected: #TagLine, #RuleLine, #Comment, #Empty, got 'Scenario: Renaming any file from its own tree dots menu'
+(18:5): expected: #TagLine, #RuleLine, #Comment, #Empty, got 'When user click three dots of the created file 2'
+(19:5): expected: #TagLine, #RuleLine, #Comment, #Empty, got 'And user select rename and write new name and click enter'
+(20:5): expected: #TagLine, #RuleLine, #Comment, #Empty, got 'Then user should see new name on the file'
+
