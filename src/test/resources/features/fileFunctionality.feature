@@ -1,8 +1,8 @@
-@ETSKY-918
+@ETSKY-918 @wip
 Feature: Add to Favorites/Rename/Comment on File Functionality
   Agile story: As a user, I should be able to add a file to favorites,
   rename any file and give some comments on any file.
-@ETSKY-913
+
   Background:
     Given the user is on the login page
     And the user enter the files section
