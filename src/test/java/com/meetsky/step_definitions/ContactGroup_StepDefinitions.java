@@ -73,7 +73,6 @@ public class ContactGroup_StepDefinitions {
     @Then("user should not able to create a new group")
     public void userShouldNotAbleToCreateANewGroup() {
         BrowserUtils.waitForVisibility(contactGroupPage.alreadyExistGroupMessage, 15);
-        System.out.println("contactGroupPage.alreadyExistGroupMessage.getText() = " + contactGroupPage.alreadyExistGroupMessage.getText());
         Assert.assertEquals(contactGroupPage.alreadyExistGroupMessage.getText(), "This group already exists");
     }
 

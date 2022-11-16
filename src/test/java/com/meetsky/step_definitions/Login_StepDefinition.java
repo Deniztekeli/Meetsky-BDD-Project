@@ -7,7 +7,7 @@ import io.cucumber.java.en.Given;
 
 public class Login_StepDefinition {
 
-    BasePage basePage = new BasePage();
+
     LoginPage loginPage=new LoginPage();
 
     @Given("the user is on the login page")

@@ -12,7 +12,7 @@ Feature: Contact Group Functionality
     And user enter a group name
     Then user should able to create a new group successfully
 
-  @ETSKY-899
+  @ETSKY-899 @smoke
   Scenario: Creating a new group under Contacts Module with already existing group name
     When user click plus + sign on Groups tab
     And user enter an already existed group name
