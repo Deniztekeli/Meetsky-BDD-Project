@@ -5,6 +5,7 @@ import com.meetsky.pages.FileFunctionality_Page;
 import com.meetsky.pages.LoginPage;
 import com.meetsky.utilities.BrowserUtils;
 import com.meetsky.utilities.Driver;
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -50,10 +51,16 @@ public class FileFunctionality_StepDefinitions {
 
 //Second scenario
 
+    @When("user click three dots of the created file {int}")
+    public void userClickThreeDotsOfTheCreatedFile(int arg0) {
+        BrowserUtils.sleep(5);
+        fileFunctionality_page.treDotsFor2.click();
+    }
+
     @When("user select rename and write new name and click enter")
     public void user_select_rename_and_write_new_name_and_click_enter() {
         BrowserUtils.sleep(5);
-        fileFunctionality_page.treeDots.click();
+
         fileFunctionality_page.renameOption.click();
 
     }
@@ -89,23 +96,53 @@ public class FileFunctionality_StepDefinitions {
 
 
 //Fourth Scenario
-    @When("user click three dots of any comment and select delete")
+   /* @When("user click three dots of any comment and select delete")
     public void user_click_three_dots_of_any_comment_and_select_delete() {
-       /* BrowserUtils.sleep(7);
+        BrowserUtils.sleep(7);
         fileFunctionality_page.commentBtn.click();
         WebDriverWait wait = new WebDriverWait(Driver.getDriver(),10);
         wait.until(ExpectedConditions.elementToBeClickable(fileFunctionality_page.commentThreeDots));
         fileFunctionality_page.commentThreeDots.click();
         fileFunctionality_page.deleteCommentOption.click();
 
-        */
+
+    }*/
+
+    @When("user click on three dots and select details option")
+    public void userClickOnThreeDotsAndSelectDetailsOption() {
+        fileFunctionality_page.dotThree.click();
+        fileFunctionality_page.details.click();
+
+        /*BrowserUtils.sleep(7);
+        fileFunctionality_page.commentBtn.click();
+        WebDriverWait wait = new WebDriverWait(Driver.getDriver(),10);
+        wait.until(ExpectedConditions.elementToBeClickable(fileFunctionality_page.commentThreeDots));
+        fileFunctionality_page.commentThreeDots.click();
+        fileFunctionality_page.deleteCommentOption.click();
+
+         */
     }
+
+    @And("user click on comment button")
+    public void userClickOnCommentButton() {
+        BrowserUtils.sleep(5);
+        fileFunctionality_page.comntButton.click();
+    }
+
+    @And("user click three dots of any comment and select delete")
+    public void userClickThreeDotsOfAnyCommentAndSelectDelete() {
+        BrowserUtils.sleep(5);
+        fileFunctionality_page.click3Dot.click();
+    }
+
     @Then("user should see that comment is deleted")
     public void user_should_see_that_comment_is_deleted() {
         BrowserUtils.sleep(5);
+        fileFunctionality_page.deleteCmnd.click();
         //Assert.assertTrue(fileFunctionality_page.commentDeletedMessage.isDisplayed());
         //Assert.assertTrue(fileFunctionality_page.tabComments.isDisplayed());
     }
+
 
 
 }
