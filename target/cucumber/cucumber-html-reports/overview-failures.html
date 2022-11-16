@@ -75,7 +75,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>No Name (add projectName to cucumber-reporting.properties)</td>
-      <td>10 Nov 2022, 08:57</td>
+      <td>16 Nov 2022, 01:43</td>
     </tr>
   </tbody>
 </table>
@@ -115,22 +115,24 @@ $(document).ready(function() {
 <div class="element">
     <div class="indention">
       <b>Feature:</b>
-      <a href="report-feature_965572540.html">Login features</a>
+      <a href="report-feature_1631224843.html">US-011 Tasks Module Functionality</a>
     </div>
 
 
 <div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_2149507997.html">@wip</a>
 </div>
 
 
-  <span class="lead-duration duration">8.916</span>
+  <span class="lead-duration duration">9.437</span>
 
 
   <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
 
 <div class="brief failed">
   <span class="keyword indention">Scenario</span>
-  <span class="name"></span>
+  <span class="name">User can add any task to the list of important tasks by clicking on the star icon on the right side of task line</span>
 
 
      <i class="chevron fa fa-fw"></i>
@@ -162,11 +164,65 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Given failed">
-  <span class="keyword indention">Given</span>
-  <span class="name">the user is on the login page</span>
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">User should click TASKS icon at the top</span>
 
-  <span class="lead-duration duration">8.916</span>
+  <span class="lead-duration duration">2.512</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Click on the star icon on the right side of task line</span>
+
+  <span class="lead-duration duration">6.413</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then failed">
+  <span class="keyword indention">Then</span>
+  <span class="name">Verify that the task is appeared in the IMPORTANT tasks tab</span>
+
+  <span class="lead-duration duration">0.511</span>
 
 </div>
 
@@ -178,20 +234,15 @@ $(document).ready(function() {
   <div class="inner-level">
     <div class="message indention">
       <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-3">
-          <a>java.lang.IllegalArgumentException:</a>
+          <a>java.lang.AssertionError</a>
       </div>
       <div id="msg-3" class="collapse collapsable-details  in ">
-        <pre>java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:97)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy17.sendKeys(Unknown Source)
-	at com.meetsky.pages.BasePage.login(BasePage.java:25)
-	at com.meetsky.step_definitions.Login_StepDefinition.the_user_is_on_the_login_page(Login_StepDefinition.java:13)
-	at &#10045;.the user is on the login page(file:///C:/Users/deniz/IdeaProjects/Meetsky-BDD-Project/src/test/resources/features/login.feature:4)
+        <pre>java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at com.meetsky.step_definitions.Task_Functions_StepDefinitions.verify_that_the_task_is_appeared_in_the_important_tasks_tab(Task_Functions_StepDefinitions.java:160)
+	at &#10045;.Verify that the task is appeared in the IMPORTANT tasks tab(file:///Users/emirizgubarlar/IdeaProjects/Meetsky-BDD-Project/src/test/resources/features/Tasks_Functionalities.feature:41)
 </pre>
       </div>
     </div>
@@ -233,7 +284,7 @@ $(document).ready(function() {
             <span class="keyword indention">After</span>
               <span class="location name">com.meetsky.step_definitions.Hooks.teardownScenario(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">0.981</span>
+  <span class="lead-duration duration">0.322</span>
 
           </div>
 
@@ -245,14 +296,14 @@ $(document).ready(function() {
   <div class="embeddings inner-level">
   <div class="embedding indention">
     <div data-toggle="collapse" data-target="#embedding-5" class="collapsable-control">
-      <a>Attachment 1 (png)</a>
-      <a href="embeddings/embedding_-944487392.png" download target="_blank">
+      <a>User can add any task to the list of important tasks by clicking on the star icon on the right side of task line</a>
+      <a href="embeddings/embedding_-347720383.png" download target="_blank">
         <span class="download-button glyphicon glyphicon-download-alt"></span>
       </a>
     </div>
     <div id="embedding-5" class="collapse collapsable-details ">
       <div class="embedding-content">
-        <img src="embeddings/embedding_-944487392.png">
+        <img src="embeddings/embedding_-347720383.png">
       </div>
     </div>
   </div>
