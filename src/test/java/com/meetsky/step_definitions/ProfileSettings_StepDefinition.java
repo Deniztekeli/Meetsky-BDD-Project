@@ -37,6 +37,7 @@ public class ProfileSettings_StepDefinition {
         profileSettingsPage.fullNameTab.sendKeys("something else");
     }
 
+
     @When("the user clicks the dropdown of Phone number")
     public void the_user_clicks_the_dropdown_of_phone_number() {
         profileSettingsPage.privatePhoneNumber.click();
