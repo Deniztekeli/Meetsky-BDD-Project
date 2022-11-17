@@ -1,7 +1,0 @@
-com\meetsky\runners\FailedTestRunner.class
-com\meetsky\utilities\BrowserUtils$1.class
-com\meetsky\utilities\BrowserUtils.class
-com\meetsky\runners\CukesRunner.class
-com\meetsky\utilities\ConfigurationReader.class
-com\meetsky\pages\BasePage.class
-com\meetsky\utilities\Driver.class
