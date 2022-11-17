@@ -16,15 +16,11 @@ public class ContactGroupPage {
     @FindBy(xpath = "(//li[@data-id='contacts'])[1]")
     public WebElement contactsButtonDash;
 
-
     @FindBy(xpath = "(//button[@aria-label='Actions'])[1]")
     public WebElement plusButtonNewGroup;
 
     @FindBy(xpath = "//input[@class='action-input__input focusable']")
     public WebElement newGroupInputArea;
-
-    @FindBy(xpath = "(//*[@class='material-design-icon__svg'])[32]")
-    public WebElement arrowInputArea;
 
     @FindBy(xpath = "(//*[@class='app-navigation-entry__title'])")
     public List<WebElement> listOfGroups;
@@ -37,7 +33,6 @@ public class ContactGroupPage {
 
     @FindBy(xpath= "(//div[@role='listitem'])[1]") //test 7
     public WebElement firstNonGroupedContact;
-
 
     @FindBy(xpath= "//input[@placeholder='Add contact in group']")
     public WebElement addContactInGroup;
@@ -73,16 +68,6 @@ public class ContactGroupPage {
 
 
 
-/*
-    public WebElement ungroupedContact(){
-        WebElement firstContact=null;
-        for (WebElement each : notGroupedContactList) {
-            firstContact= each;
-            break;
-        }
-        return firstContact;
-
- */
     }
 
 

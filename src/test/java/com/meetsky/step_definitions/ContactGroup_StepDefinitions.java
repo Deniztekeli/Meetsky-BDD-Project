@@ -20,8 +20,6 @@ import java.util.List;
 public class ContactGroup_StepDefinitions {
 
     BasePage basePage = new BasePage();
-
-
     ContactGroupPage contactGroupPage = new ContactGroupPage();
 
     @And("the user enters the contacts menu")
