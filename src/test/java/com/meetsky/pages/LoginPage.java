@@ -23,7 +23,7 @@ public class LoginPage {
 
     public void login() {
         Driver.getDriver().get(ConfigurationReader.getProperty("meetsky.url"));
-        usernameButton.sendKeys(ConfigurationReader.getProperty("meetsky.username.emir"));
+        usernameButton.sendKeys(ConfigurationReader.getProperty("meetsky.username.meral"));
         passwordButton.sendKeys(ConfigurationReader.getProperty("meetsky.password"));
         loginButton.click();
     }

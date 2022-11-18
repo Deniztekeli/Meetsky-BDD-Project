@@ -13,11 +13,14 @@ public class Login_StepDefinition {
 
     @Given("the user is on the login page")
     public void the_user_is_on_the_login_page() {
-
+/*
         Driver.getDriver().get("https://qa.meetsky.net/index.php/login?clear=1");
-        basePage.usernameButton.sendKeys("Employee91");
+        basePage.usernameButton.sendKeys("Employee121");
         basePage.passwordButton.sendKeys("Employee123");
         basePage.loginButton.click();
+
+ */
+        basePage.login();
     }
     @When("the user clicks on the Profile button")
     public void the_user_clicks_on_the_profile_button() {
