@@ -7,7 +7,7 @@ Feature: Add to Favorites/Rename/Comment on File Functionality
     Given the user is on the login page
     And the user enter the files section
 
-  @ETSKY-914
+  @ETSKY-914 @smoke
   Scenario: Adding any file to favorites by clicking tree dots menu
     When user click three dots of the created file
     And user select add to favorites link
