@@ -1,10 +1,11 @@
+@elnur
 Feature: Files module
 
 
   Background:
     Given the user is on the login page
 
-  @wip @ETSKY-928
+  @ETSKY-928 @smoke
   Scenario: User can create a new folder
     Given User is on the Files page
     When User clicks on the + button
@@ -12,7 +13,7 @@ Feature: Files module
     And User enter new folder name and press enter
     Then New folder is displayed on the page
 
-  @wip
+  @ETSKY-930
   Scenario: User can move or copy any selected item to any folder
     Given User is on the Files page
     When User clicks on the three dots button of "Folder1"
@@ -21,7 +22,7 @@ Feature: Files module
     And User clicks on the move button
     Then User move the chosen file to new folder
 
-  @wip
+  @ETSKY-931
   Scenario: User can delete any selected item from its three dots menu
     Given User is on the Files page
     When User clicks on the three dots button of "deleted folder"
@@ -29,12 +30,12 @@ Feature: Files module
     And User clicks on the Deleted files button
     Then Deleted file is displayed on the page
 
-  @wip
+  @ETSKY-932
   Scenario: User can see the total number of files and folders under the files list table
     Given User is on the Files page
     Then The total number of files and folders are displayed under the files list table
 
-  @wip
+  @ETSKY-933
   Scenario: User can create a new text document
     Given User is on the Files page
     When User clicks on the + button

@@ -52,7 +52,7 @@ public class FileModulePage {
     @FindBy (linkText = "Deleted files")
     public WebElement deletedFilesButton;
 
-    @FindBy (xpath = "(//span[.='deleted folder'])[2]")
+    @FindBy (css = "span[title='deleted folder']")
     public WebElement deletedFile;
 
     @FindBy(xpath = "//span[.='1 file']")
