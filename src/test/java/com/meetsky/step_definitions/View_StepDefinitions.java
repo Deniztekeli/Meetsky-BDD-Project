@@ -104,7 +104,6 @@ public class View_StepDefinitions {
         for (WebElement eachWebElement : viewPage.folderList) {
             list2.add(eachWebElement.getAttribute("data-mtime"));
         }
-
         Collections.sort(list);
         System.out.println(list);
         System.out.println(list2);
