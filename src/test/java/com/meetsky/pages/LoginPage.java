@@ -1,5 +1,6 @@
 package com.meetsky.pages;
 
+import com.meetsky.utilities.BrowserUtils;
 import com.meetsky.utilities.ConfigurationReader;
 import com.meetsky.utilities.Driver;
 import org.openqa.selenium.WebElement;
@@ -25,6 +26,7 @@ public class LoginPage {
         Driver.getDriver().get(ConfigurationReader.getProperty("meetsky.url"));
         usernameButton.sendKeys(ConfigurationReader.getProperty("meetsky.username.elnur"));
         passwordButton.sendKeys(ConfigurationReader.getProperty("meetsky.password"));
+        BrowserUtils.waitFor(3);
         loginButton.click();
     }
 

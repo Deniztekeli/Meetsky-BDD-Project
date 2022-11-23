@@ -6,7 +6,7 @@ Feature: Contact Group Functionality
     Given the user is on the login page
     And the user enters the contacts menu
 
-  @ETSKY-898
+  @ETSKY-89
   Scenario: Creating a new group under Contacts Module
     When user click plus + sign on Groups tab
     And user enter a group name
