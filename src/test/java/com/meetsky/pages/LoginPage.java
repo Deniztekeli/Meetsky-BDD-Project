@@ -24,7 +24,7 @@ public class LoginPage {
 
     public void login() {
         Driver.getDriver().get(ConfigurationReader.getProperty("meetsky.url"));
-        usernameButton.sendKeys(ConfigurationReader.getProperty("meetsky.username.elnur"));
+        usernameButton.sendKeys(ConfigurationReader.getProperty("meetsky.username.melek"));
         passwordButton.sendKeys(ConfigurationReader.getProperty("meetsky.password"));
         BrowserUtils.waitFor(7);
         loginButton.click();
