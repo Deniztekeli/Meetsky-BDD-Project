@@ -1,15 +1,15 @@
 Feature: Login features
 
-
   Background:
     Given the user is on the login page
     When the user clicks on the Profile button
     And the user clicks Settings button under the Profile option
 
-  @smoke @ETSKY-919
+  @ETSKY-919
     Scenario: see personal info under Profile Settings page
     Then user should see Full name, Email, and Phone Number options
 
+  @smoke
   @ETSKY-920
   Scenario: change "Full name" info under Profile Settings page
     When the user clicks under the Full name tab
