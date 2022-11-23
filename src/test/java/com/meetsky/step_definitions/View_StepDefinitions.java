@@ -36,6 +36,7 @@ public class View_StepDefinitions {
     @Then("user should see the folders ordered by name")
     public void userShouldSeeTheFoldersOrderedByName() {
 
+
     ArrayList<String> list = new ArrayList<>();
         for (WebElement eachWebElement : viewPage.folderList) {
             list.add(eachWebElement.getAttribute("data-file").toUpperCase());
