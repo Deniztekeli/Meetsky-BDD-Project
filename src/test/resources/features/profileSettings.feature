@@ -9,8 +9,8 @@ Feature: Login features
     Scenario: see personal info under Profile Settings page
     Then user should see Full name, Email, and Phone Number options
 
-  @smoke
-  @ETSKY-920
+
+  @ETSKY-920 @smoke
   Scenario: change "Full name" info under Profile Settings page
     When the user clicks under the Full name tab
     And the user deletes the existing contact name
