@@ -36,6 +36,7 @@ public class View_StepDefinitions {
     @Then("user should see the folders ordered by name")
     public void userShouldSeeTheFoldersOrderedByName() {
 
+
     ArrayList<String> list = new ArrayList<>();
         for (WebElement eachWebElement : viewPage.folderList) {
             list.add(eachWebElement.getAttribute("data-file").toUpperCase());
@@ -103,7 +104,6 @@ public class View_StepDefinitions {
         for (WebElement eachWebElement : viewPage.folderList) {
             list2.add(eachWebElement.getAttribute("data-mtime"));
         }
-
         Collections.sort(list);
         System.out.println(list);
         System.out.println(list2);
