@@ -27,8 +27,15 @@ public class ViewPage {
     public WebElement filesLink;
 
     @FindBy(id= "headerName-container")
-         //   "//span[.='Name']/following-sibling::span[@class='sort-indicator hidden icon-triangle-s']")
     public WebElement orderByNameButton;
+
+    @FindBy(xpath = "//span[.='Name']/following-sibling::span[@class='sort-indicator hidden icon-triangle-s']")
+    public WebElement orderByNameButtonDesc;
+
+    @FindBy(xpath = "//span[.='Name']/following-sibling::span[@class='sort-indicator hidden icon-triangle-n']")
+    public WebElement orderByNameButtonAsc;
+
+    // "//span[.='Name']/following-sibling::span[@class='sort-indicator hidden icon-triangle-s']"
     // //span[@class='sort-indicator icon-triangle-s']
     // //span[.='Name']
 
@@ -37,11 +44,23 @@ public class ViewPage {
 
     @FindBy(id = "headerSize")
     public WebElement orderBySizeButton;
+
+    @FindBy(xpath = "//span[.='Size']/following-sibling::span[@class='sort-indicator hidden icon-triangle-s']")
+    public WebElement orderBySizeButtonDesc;
+
+    @FindBy(xpath = "//span[.='Size']/following-sibling::span[@class='sort-indicator hidden icon-triangle-n']")
+    public WebElement orderBySizeButtonAsc;
             // "//span[.='Size']/following-sibling::span[@class='sort-indicator hidden icon-triangle-s']")
     // //span[.='Size']
 
     @FindBy(id = "headerDate")
     public WebElement orderByModifiedButton;
+
+    @FindBy(xpath = "//span[.='Modified']/following-sibling::span[@class='sort-indicator hidden icon-triangle-s']")
+    public WebElement orderByModifiedButtonDesc;
+
+    @FindBy(xpath = "//span[.='Modified']/following-sibling::span[@class='sort-indicator hidden icon-triangle-n']")
+    public WebElement orderByModifiedButtonAsc;
     //xpath = "//span[.='Modified']/following-sibling::span[@class='sort-indicator hidden icon-triangle-s']")
     // //span[.='Modified']
 

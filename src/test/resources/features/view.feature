@@ -3,8 +3,7 @@ Feature: Folder view features
   Background:
     Given the user is on the login page
 
-
-  @smoke  @ETSKY-906
+  @ETSKY-906
 Scenario: Changing folder view order by Name
   When user click files menu
   And  user select name option to order the folders
@@ -28,7 +27,7 @@ Scenario: Changing folder view  by clicking the toggle-view button at the right 
   And user click the toggle-view button
   Then user should be able to change the view of the folders as side by side and in a column
 
-@ETSKY-910
+@smoke @ETSKY-910
 Scenario: Selecting all the files at once and see the total values of
 all files in the first line when clicked on the “select all” checkbox at the left top corner of the list
   When user click files menu
