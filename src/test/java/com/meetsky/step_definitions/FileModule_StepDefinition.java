@@ -22,7 +22,7 @@ public class FileModule_StepDefinition {
     @Given("User is on the Files page")
     public void userIsOnTheFilesPage() throws InterruptedException {
         Thread.sleep(2000);
-        fileModulePage.fileIcon.click();
+        fileModulePage.getFileIcon().click();
     }
 
     @When("User clicks on the + button")

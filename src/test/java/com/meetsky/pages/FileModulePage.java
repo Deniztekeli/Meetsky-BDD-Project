@@ -11,7 +11,10 @@ public class FileModulePage {
     }
 
     @FindBy(xpath = "(//a[@aria-label='Files'])[1]")
-    public WebElement fileIcon;
+    private WebElement fileIcon;
+    public WebElement getFileIcon() {
+        return fileIcon;
+    }
 
     @FindBy(css = "a.button.new")
     public WebElement plusButton;
